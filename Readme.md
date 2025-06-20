@@ -2,9 +2,7 @@
 
 ## 本项目开源，如果发现倒卖请联系 QQ:3520687734
 
-### java代码
-
-
+### Java代码
 ```java
 public class main {
 }
