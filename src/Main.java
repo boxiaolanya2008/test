@@ -1,11 +1,16 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
         // 注：String 语法的值需要增加双引号，比如 "123"
         // 注：int 语法的值不需要增加双引号
         // 注：char 语法中不要加入 双引号 和 单引号 否则会报错
         // 注：short 数据类型可以存储从 -32768 到 32767 的整数
         // 注：printIn 输出语法 双引号不要换成单引号会报错
+
         /*
         byte	1 字节	存储从 -128 到 127 的整数。
         short	2 字节	存储从 -32,768 到 32,767 的整数。
@@ -16,7 +21,6 @@ public class Main {
         boolean	1 比特	存储 true 值或 false 值。
         char	2 字节	存储单个字符/字母或 ASCII 值。
          */
-
 
         // 创建一个名为 name1 的 Strings 变量
         String name1 = "123";
@@ -80,5 +84,12 @@ public class Main {
         // 不要加入单引号和双引号否则会报错
         zong = length + weight;
         System.out.println("高＋宽 = " + zong);
+
+        // 连接数据库
+        String url = "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=true";
+        String username = "root";
+        String password = "root";
+        Connection connection = DriverManager.getConnection(url, username, password);
+        System.out.println("数据库连接成功");
     }
 }
