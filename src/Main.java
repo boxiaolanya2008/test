@@ -22,6 +22,13 @@ public class Main {
         char	2 字节	存储单个字符/字母或 ASCII 值。
          */
 
+        int my = 5; // 整数
+        float my2 = 1.11f; // 浮点数
+        String my3 = "abc"; // 字符串
+        boolean my4 = true; // 布尔值 比如 true false
+        char my5 = 'a'; // 字符 abcdefg.......
+
+
         // 创建一个名为 name1 的 Strings 变量
         String name1 = "123";
 
@@ -84,12 +91,5 @@ public class Main {
         // 不要加入单引号和双引号否则会报错
         zong = length + weight;
         System.out.println("高＋宽 = " + zong);
-
-        // 连接数据库
-        String url = "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=true";
-        String username = "root";
-        String password = "root";
-        Connection connection = DriverManager.getConnection(url, username, password);
-        System.out.println("数据库连接成功");
     }
 }
