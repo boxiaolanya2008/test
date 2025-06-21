@@ -22,6 +22,7 @@ public class Main {
         char	2 字节	存储单个字符/字母或 ASCII 值。
          */
 
+        /*
         int my = 5; // 整数
         float my2 = 1.11f; // 浮点数
         String my3 = "abc"; // 字符串
@@ -91,5 +92,55 @@ public class Main {
         // 不要加入单引号和双引号否则会报错
         zong = length + weight;
         System.out.println("高＋宽 = " + zong);
+        */
+
+        /* int 数据类型可以存储从 -2147483648 到 2147483647 的整数。 一般来说，在我们的教程中，当我们创建存有数值的变量时，int 数据类型是首选数据类型。
+        int share = 1000;
+        System.out.println("123 = " + share);
+        */
+
+        /* short 数据类型可以存储从 -32768 到 32767 的整数：
+        short my2 = 123;
+        System.out.println(my2);
+         */
+
+        /* long 数据类型可以存储从 -9223372036854775808 到 9223372036854775807 的整数。当 int 不足以存储值时使用。请注意，该值以 "L" 结尾：
+        long my3 = 1231321L;
+        System.out.println(my3);
+         */
+
+        /* float 和 double 数据类型可以存储小数。请注意，对于浮点型，应以 "f" 结尾，对于双精度型，应以 "d" 结尾：
+        float my4 = 123456.111f;
+        System.out.println(my4);
+
+        double my5 = 123456.111d;
+        System.out.println(my5);
+         */
+
+        /* 科学数字 浮点数也可以是带有 "e" 的科学数，表示 10 的幂：
+        float my6 = 123f;
+        double my7 = 123E123;
+        System.out.println(my6);
+        System.out.println(my7);
+         */
+
+        /* boolean 的值只能是 true 或者 false
+        boolean my8 = true;
+        boolean my9 = false;
+        System.out.println(my9);
+        System.out.println(my8);
+         */
+
+        /* char 数据类型用于存储单个字符。字符必须用单引号括起来，例如 'A' 或 'c'：
+        以下这种就是多个输出，以防一个个打好麻烦
+        char my10 = 123, my11 = 456, my12 = 789;
+        System.out.println(my10 + my11 + my12);
+         */
+
+
+        /* String 只能输出文本，在文本那里记得增加 “双引号”
+        String geege = "123";
+        System.out.println(geege);
+        */
     }
 }
